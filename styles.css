@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec; /* Light pink background */
+}
+
+header {
+    background: linear-gradient(to right, #ff66b2, #ff4d4d); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: pulse 1.5s infinite alternate; /* Pulse animation */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+#intro img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px; /* Rounded image */
+    animation: rotate 4s linear infinite; /* Rotate animation */
+}
+
+#gifts {
+    margin-top: 30px;
+    animation: bounce 1s infinite alternate; /* Bounce animation */
+}
+
+h2 {
+    color: #ff4d4d;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #ff66b2, #ff4d4d);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
